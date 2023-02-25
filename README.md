@@ -30,9 +30,19 @@ A lead is generated when any person visits the website and enters their contact 
 1. Data Pipeline: processes the raw data 
 2. Training pipeline : preprocessing & model training
 3. Inference pipeline: pre-processing , model prediction 
-### Pre-processing
+### Pre-processing & EDA
+The dataset primarity focuses on the variables/features describing the origin of the lead(e.g: referred_leads,city_mapped) and the interaction of the lead with the website(1_on_1_mentorship, whatsapp_chat_click). The Exploratory Data Analysis was done using pandas profiling.
+#### EDA Observations
+* The dataset consists a lot of missing values
+* There are only a few categories which are significant in first_platform_c, first_utm_source_c,first_utm_medium_c.
+* There are few interaction columns which have 99% missing values 
+#### Data Pre-processing
+* Reducing the high cardinality in city_mapping column: the city is mapped to tier1 , tier2 and tier 3.
+* The first_platform_c, first_utm_medium_c and first_utm_source_c columns contained only a few significant categories. To sort this problem, we can pick up the categories that covered 90% of the data. The smaller contributing categories can be classified as ‘others’. To do this, we must calculate the cumulative frequency of each category to filter them out on 90% criteria. 
+* Replaced the null values with 0 for total_leads_dropped and referred_leads column.
+* There are 37 interaction columns which have to be classified into four categories namely assistance interaction, career interaction, payment interaction and syllabus interaction. 
 
-### EDA
+The notebook for data preprocessing and EDA can be found here [Data Preprocessing&EDA](https://github.com/RakshithaBS/Lead_Scoring_Case_Study/blob/master/Lead_scoring_data_pipeline/data_cleaning_template.ipynb)
 
 ### Model Experimentation
 
