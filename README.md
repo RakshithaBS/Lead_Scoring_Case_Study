@@ -57,6 +57,8 @@ The project covers basic unit test cases to check the pre-processing functionali
 3. Test case to check the correct mapping of categorical variables.
 4. Test case to check interaction mapping schema
 
+Test cases can be found here [Test cases](https://github.com/RakshithaBS/Lead_Scoring_Case_Study/tree/master/unit_test)
+
 
 
 ## Setup
