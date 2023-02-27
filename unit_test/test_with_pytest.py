@@ -31,7 +31,7 @@ s
     conn.close()
     conx.close()
     
-    #assert test_data.equals(loaded_data)
+    assert test_data.equals(loaded_data)
 
 ###############################################################################
 # Write test cases for map_city_tier() function
