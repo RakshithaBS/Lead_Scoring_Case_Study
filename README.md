@@ -50,7 +50,47 @@ Pycaret is an open-source, low-code machine learning library in Python that is d
 
 ### Test Cases
 
+The project covers basic unit test cases to check the pre-processing functionalities.
+
+1. Check load_data_to_db function.
+2. Check mapping city to tiers functionality
+3. Test case to check the correct mapping of categorical variables.
+4. Test case to check interaction mapping schema
 
 
 
 ## Setup
+
+1. Install necessary dependencies using the below command.
+
+```
+pip install -r requirements.txt
+```
+2. Install airflow locally
+3. Airflow Setup
+* Create airflow user for the UI login
+```
+airflow users create \
+    --username rakshitha\
+    --firstname rakshitha\
+    --lastname bs\
+    --role Admin \
+    --email rakshitha@gmail.com\
+    --password 123
+```
+
+* Run airflow webserver
+```
+airflow webserver -p 8080
+```
+
+* Start airflow scheduler
+```
+airflow scheduler
+```
+4. MLflow setup
+* Starting mlflow tracking server
+```
+mlflow serve --model-uri <path_to_sqilte_db> --port <port_number> --host <host_address>
+
+```
