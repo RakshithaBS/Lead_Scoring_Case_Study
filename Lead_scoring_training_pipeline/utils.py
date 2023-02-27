@@ -1,9 +1,5 @@
-'''
-filename: utils.py
-functions: encode_features, get_train_model
-creator: shashank.gupta
-version: 1
-'''
+
+
 
 ###############################################################################
 # Import necessary modules

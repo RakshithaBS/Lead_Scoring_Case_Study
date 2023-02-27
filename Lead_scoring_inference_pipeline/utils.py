@@ -1,9 +1,4 @@
-'''
-filename: utils.py
-functions: encode_features, load_model
-creator: shashank.gupta
-version: 1
-'''
+
 
 ###############################################################################
 # Import necessary modules
