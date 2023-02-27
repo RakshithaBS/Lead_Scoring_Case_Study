@@ -6,6 +6,7 @@
 * Motivation
 * Setup
 * Technical Aspect
+* Demo
 
 
 ## Overview
@@ -96,3 +97,7 @@ airflow scheduler
 mlflow serve --model-uri <path_to_sqilte_db> --port <port_number> --host <host_address>
 
 ```
+
+## Demo
+
+The screen shots for the pipelines can be found here [https://github.com/RakshithaBS/Lead_Scoring_Case_Study/blob/master/MLOPS.pdf](ScreenShots)
