@@ -11,7 +11,7 @@
 
 ## Overview
 
-The objective of this project is to predict whether a customer/ lead will purchase the product or not. In this project the focus is mostly on the process of creating pipelines for data pre-processing, model training and inference using Airflow. The project also covers model experiment tracking using MLFlow. Pycaret module which is an opensource framework for auto ML is used to find the best fit model. During pycaret experimentation it is found that lightgbm, which is an xgboost classfication algorithm gives the best performance.The model was evaluated based on accuracy.The project also covers unit test cases using pytest. 
+The objective of this project is to predict whether a customer/ lead will purchase the product or not. In this project the focus is mostly on the process of creating pipelines for data pre-processing, model training and inference using **Airflow**. The project also covers model experiment tracking using **MLFlow**. Pycaret module which is an opensource framework for auto ML is used to find the best fit model. During pycaret experimentation it is found that lightgbm, which is an xgboost classfication algorithm gives the best performance.The model was evaluated based on accuracy.The project also covers unit test cases using pytest. 
 
 ## Motivation
 
